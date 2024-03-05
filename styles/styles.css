@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto&family=Plus+Jakarta+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto&family=Yeseva+One&display=swap');
 
 main {
   max-width: 840px;
@@ -24,7 +24,7 @@ body {
 }
 
 h1 {
-  font-family: 'Plus Jakarta Sans', 'Bradley Hand', cursive;
+  font-family: 'Yeseva One', 'Bradley Hand', cursive;
 }
 
 nav {
