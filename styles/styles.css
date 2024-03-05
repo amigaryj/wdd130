@@ -49,9 +49,7 @@ main img {
   box-shadow: 0 0 30px gray;
 }
 
-p {
-  padding: 1px;
-}
+p { padding: 0px;}
 
 footer {
   margin-top: 1em;
