@@ -1,11 +1,30 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto&family=Rock+Salt&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto&family=Plus+Jakarta+Sans&display=swap');
+
+main {
+  max-width: 840px;
+}
+
+aside {
+  width: 20em;
+  margin: 1em;
+  border: 1px solid rgba(0, 0, 0, 0.2);
+  padding: 1em;
+  background-color: #eee;
+  color: #333;
+  text-align: center;
+}
+
+aside img {
+  width: 200px;
+  height: auto;
+}
 
 body {
   font-family: Roboto, Helvitica, sans-serif;
 }
 
 h1 {
-  font-family: 'Rock Salt', 'Bradley Hand', cursive;
+  font-family: 'Plus Jakarta Sans', 'Bradley Hand', cursive;
 }
 
 nav {
@@ -22,7 +41,7 @@ h1 {
   color: steelblue;
 }
 
-img {
+main img {
   width: 150px;
   height: auto;
   border: 1px solid steelblue;
@@ -31,5 +50,11 @@ img {
 }
 
 p {
-  padding: 10px;
+  padding: 0px;
+}
+
+footer {
+  margin-top: 1em;
+  border-top: 1px solid #000;
+  text-align: center;
 }
