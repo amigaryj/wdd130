@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Roboto&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,700;1,700&family=Roboto&display=swap');
 
 body {
     font-family: var(--paragraph-font);
@@ -13,7 +13,7 @@ body {
     --accent2-color: #5E6E96;
     --accent3-color: #94CCC9;
     
-    --heading-font: "Bebas Neue", sans-serif;
+    --heading-font: "Open Sans", sans-serif;
     --paragraph-font: "Roboto", sans-serif;
 
     --nav-background-color: #5E6E96;
