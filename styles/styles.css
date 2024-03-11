@@ -10,6 +10,7 @@ aside {
 }
 
 aside img {
+  position: relative;
   width: 200px;
   height: auto;
 }
