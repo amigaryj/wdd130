@@ -1,46 +1,13 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto&family=Yeseva+One&display=swap');
 
+* {
+	margin: 0;
+	padding: 0;
+  box-sizing: border-box;
+}
+
 main {
   max-width: 840px;
-}
-
-aside {
-  width: 20em;
-  text-align: center;
-}
-
-aside img {
-  position: relative;
-  width: 200px;
-  height: auto;
-}
-
-aside h2 {
-  position: absolute;
-  top: 47px;
-  left: 150px;
-}
-
-body {
-  font-family: Roboto, Helvitica, sans-serif;
-}
-
-h1 {
-  font-family: 'Yeseva One', 'Bradley Hand', cursive;
-}
-
-nav {
-  background-color: steelblue;
-  padding: 10px;
-}
-
-nav a {
-  color: white;
-  display: block;
-  padding: 20px;
-}
-h1 {
-  color: steelblue;
 }
 
 main img {
@@ -50,20 +17,61 @@ main img {
   padding: 2px;
   box-shadow: 0 0 30px gray;
   float: right;
+  margin: 0 0 1rem 1rem;
 }
 
-p {padding: 0;}
+aside {
+  width: 20em;
+  text-align: center;
+  position: relative;
+}
+
+aside img {
+  width: 200px;
+  height: auto;
+}
+
+aside h2 {
+  position: absolute;
+  top: 20px;
+  left: 130px;
+}
+
+body {
+  font-family: Roboto, Helvitica, sans-serif;
+}
+
+h1 {
+  font-family: 'Yeseva One', 'Bradley Hand', cursive;
+  color: steelblue;
+  margin: 1rem;
+}
+
+nav {
+  background-color: steelblue;
+  padding: 10px;
+}
+
+h2 {
+  font-family: 'Yeseva One', 'Bradley Hand', cursive;
+  color: whitesmoke;
+}
+
+nav a {
+  color: white;
+  display: block;
+  padding: 20px;
+}
+
+p {
+  padding: 0;
+  margin: 1rem;
+}
 
 footer {
   margin-top: 15px;
   border-top: 1px solid #000;
   text-align: center;
-}
-
-* {
-	margin: 0;
-	padding: 0;
-  box-sizing: border-box;
 }
 
  /*Class Selectors*/
@@ -73,4 +81,8 @@ footer {
   padding: 1rem;
   background-color: aliceblue;
   color: steelblue;
+ }
+
+ .indent {
+  padding-left: 2rem
  }
