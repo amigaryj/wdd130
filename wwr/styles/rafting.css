@@ -16,48 +16,105 @@
     --nav-hover-background-color: #F4A937;
 }
 
+h1, h2, h3, h4, h5, h6 {
+    font-family: var(--heading-font);
+    color: var(--primary-color);
+}
+
+p {
+    padding: 25px;
+}
+
+nav {
+    /*background-color: var(--nav-background-color);*/
+    font-size: 1.2rem;
+    display: flex;
+}
+
+nav a {
+    display: block;
+    color: var(--nav-link-color);
+    text-decoration: none;
+    padding: 1rem;
+}
+
+nav a:link, nav a:visited {
+    color: var(--nav-link-color);
+}
+
+nav a:hover {
+    color: var(--nav-hover-link-color);
+    background-color: var(--nav-hover-background-color);
+}
+
 body {
     font-family: var(--paragraph-font);
     max-width: 960px;
     padding: 20px;
 }
 
-.title {
-    text-align: center;
+a:link {
+    text-decoration: none;
 }
+
+.hero {
+    position: relative;
+    overflow: hidden
+}
+
 .hero img {
-    display: block;
     width: 100%;
     height: auto;
-    position: relative;
+    display: block;
 }
 
-h1 {
+.hero h1 {
     position: absolute;
+    top: 10%;
+    left: 0;
+    right: 0;
+    color: whitesmoke;
+    z-index: 3;
+    background-color: rgba(66, 83, 95, 0.5); /* Semi-transparent white background */
+    padding: 10px 20px;
+    text-align: center;
 }
 
-article {
+.title {
     position: absolute;
-    background-color: #42535F;
+    top: 20%;
+}
+.hero article {
+    position: absolute;
+    background-color: rgba(66, 83, 95, 0.5);
+    padding: 20px;
+    top: 45%;
+    left: 5%;
+    right: 5%;
+    width: 85%;
+    color: whitesmoke;
+    z-index: 2;
 }
 
-article img {
+.hero article img {
     float: right;
-    width: 50px;
+    width: 200px;
     height: auto;
-    top: 20px;
-    left: 130px;
-    opacity: 100%;
+    display: block;
+}
+
+.hero article p {
+    color: #fff;
 }
 
 footer {
-    padding: 25px 50px;
-    margin-top: 200px;
-    display: flex;
-    justify-content: space-around;
+    padding: 5px 5px;
+    margin-top: 5px;
     align-items: center;   
 }
 
-footer .sociallinks img {
-    padding-top: 15px;
+.sociallinks {
+    margin-top: 5px;
+    display: flex;
+    align-items: center;
 }
