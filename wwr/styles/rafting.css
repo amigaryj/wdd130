@@ -35,11 +35,29 @@ h1 {
 
 article {
     position: absolute;
-    background-color: 
+    background-color: #42535F;
 }
 
 article img {
     float: right;
+    width: 50px;
+    height: auto;
     top: 20px;
     left: 130px;
+    opacity: 100%;
+}
+
+/*Class Selectors*/
+/*.box {
+    margin: 1rem;
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    padding: 1rem;
+    background-color: #42535F;
+    color: steelblue;
+    opacity: 50%;
+   }*/
+
+.sociallinks {
+    position: absolute;
+    margin-bottom: 1rem;
 }
