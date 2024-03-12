@@ -22,6 +22,9 @@ body {
     padding: 20px;
 }
 
+.title {
+    text-align: center;
+}
 .hero img {
     display: block;
     width: 100%;
@@ -47,17 +50,14 @@ article img {
     opacity: 100%;
 }
 
-/*Class Selectors*/
-/*.box {
-    margin: 1rem;
-    border: 1px solid rgba(0, 0, 0, 0.2);
-    padding: 1rem;
-    background-color: #42535F;
-    color: steelblue;
-    opacity: 50%;
-   }*/
+footer {
+    padding: 25px 50px;
+    margin-top: 200px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;   
+}
 
-.sociallinks {
-    position: absolute;
-    margin-bottom: 1rem;
+footer .sociallinks img {
+    padding-top: 15px;
 }
