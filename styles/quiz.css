@@ -100,3 +100,9 @@ footer {
     margin-left: auto;
     font-family: 'Consolas', 'Courier New', monospace;
 }
+
+.q4 input {
+    padding: 0.5rem;
+    font-size: 1.1rem;
+    width: 100%;
+}
