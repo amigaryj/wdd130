@@ -248,9 +248,27 @@ h2 {
     font-size: 19px;
 }
 
+h1 {
+    text-align: center;
+    margin-top: 40px;
+    color: #42535F; 
+    position: relative;
+    z-index: 2;
+    line-height: 1; 
+}
+
+h4 {
+    text-align: center;
+    margin-top: 5px; /* Adjust the margin-top value */
+    color: #42535F; 
+    position: relative;
+    z-index: 2;
+    line-height: 0; 
+}
+
 .color-box {
     background-color: #F4A937;
-    height: 200px;
+    height: 400px;
     max-width: 1600px;
     position: absolute;
     left: 28px;
@@ -279,7 +297,7 @@ h2 {
 .employee-3 {
     grid-row: 1;
     position: relative;
-    top: 70px;
+    top: 40px;
     margin-bottom: 60px;
 }
 
