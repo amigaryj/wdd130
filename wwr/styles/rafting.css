@@ -358,9 +358,9 @@ h2 {
     grid-row: 3; 
 }
 
-.contact-form h2 {
+/*.contact-form h2 {
     display: none;
-}
+}*/
 
 form {
     width: 450px;
