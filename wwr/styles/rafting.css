@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,700;1,700&family=Roboto&display=swap');
 
 :root {
-    --primary-color: #42535F;
+    --primary-color: #42535F;;
     --secondary-color: #F1692F;
     --accent1-color: #F4A937;
     --accent2-color: #5E6E96;
@@ -25,9 +25,9 @@ body {
 header {
     background-color:#42535F;
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     align-items: center;
-    padding: 10px 20px;
+    padding: 5px 5px;
 }
 
 header nav {
@@ -36,7 +36,7 @@ header nav {
 
 .logo {
     width: 90px;
-    padding-top: 10px;
+    padding-top: 5px;
     padding-bottom: 5px;
 }
 
@@ -131,30 +131,30 @@ nav a:hover {
     margin-right: 220px;
 }
 
-.footer {
-    display: grid;
-    grid-template-columns: 6fr 1fr;
-    gap: 10px; 
-    margin-right: 0; 
+footer {
+    display: flex;
+    padding: 25px 50px;  
+    margin-top: 70px; 
+    justify-content: space-around;
     align-items: center;
     border-top: 2px solid #42535F; 
 }
 
-.footer-content {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
+footer a {
+    Color: #000;
+    text-decoration: none;
 }
 
-.social-links {
-    display: flex;
-    justify-content: flex-end;
-    margin-right: 5px
+footer p {
+    font-size: 1.2rem;
 }
 
-.social-links a {
-    margin-right: 0px; 
+footer p a hover: {
+    text-decoration: underline;
+}
+
+footer a:hover {
+    color: #42535F;
 }
 
 .wireframe-link {
@@ -257,9 +257,11 @@ h1 {
     line-height: 1; 
 }
 
+/*------------------ Contact Us ----------------*/
+
 h4 {
     text-align: center;
-    margin-top: 5px; /* Adjust the margin-top value */
+    margin-top: 5px;
     color: #42535F; 
     position: relative;
     z-index: 2;
@@ -330,8 +332,8 @@ h4 {
 }
 
 .employee-section {
-    border-bottom: 1px solid #42535F; /* Add border to the bottom of the employee section */
-    padding-bottom: 20px; /* Add some padding at the bottom for spacing */
+    border-bottom: 1px solid #42535F;
+    padding-bottom: 20px;
 }
 
 
@@ -437,4 +439,196 @@ button[type="submit"] {
     border: 1px solid rgba(0, 0, 0, 0.1);
     border-radius: 0.5rem;
     margin: auto;
+}
+
+/*----------------- Trips--------------*/
+
+.book,.join {
+    background-color:#F4A937;
+    color:#000;
+    text-decoration:none;
+    text-align: center;
+    padding: 15px 30px;
+    margin-top: 100px;
+    border-radius: 5px;
+}
+
+.button-box .book:hover {
+    background-color: #F1692F; 
+    color: #fff; 
+}
+
+#hero-img {
+    width: 100%;
+    position: relative;
+}
+
+#hero-box::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+}
+
+#hero {
+    display: grid;
+    grid-template-columns: 1fr 3fr 1fr;
+    margin-top: -100px;
+}
+
+#hero-box {
+    grid-column: 1/4;
+    grid-row: 1/3;
+    z-index: -1;
+}
+
+#hero-msg {
+    grid-column: 2/3;
+    grid-row: 1/2;
+    margin-top: 100px;
+}
+
+h4,.msg h2 {
+    color:#000;
+}
+
+#hero-msg h4 {
+    text-align: center;
+    color: white;
+}
+
+#hero-msg h1 {
+    text-align: center;
+    color: white;
+}
+
+#hero-msg h1,#hero-msg div,.button-box,main section {
+    text-align: center;
+}
+
+#hero-msg h1,
+#hero-msg h4 {
+    margin-bottom: 60px;
+}
+
+.home-grid {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 20px;
+    margin-top: 20px;
+    border-bottom: 1px solid 
+}
+
+.home-grid section {
+    text-align: center;
+}
+
+.home-grid h2 {
+    font-size: 24px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.home-grid .card-img {
+    margin-bottom: 20px;
+    border: 2px solid #4A4E69;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.home-grid p {
+    text-align: justify;
+}
+.rivers-card, .camping-card, .rapids-card {
+    margin: 30px 0;
+}
+
+.card-img {
+    width: 100%;
+    height: auto; 
+    transition: transform .5s;
+    box-shadow: 5px 5px 10px #6f7364;
+}
+
+.card-img:hover {
+    opacity: .6;
+    transform: scale(1.1);
+}
+
+.grand-card,
+.kayak-card,
+.rapids-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.trip-comparison {
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+}
+
+.description-column {
+    flex: 1;
+    margin-right: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between; 
+}
+
+.trip-comparison .description-column h2 {
+    margin-bottom: 5px;
+}
+    
+.trip-comparison .description-column p {
+    margin-top: 2px;
+}
+
+.table-column {
+    flex: 2;
+}
+
+.book-now-button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #F4A937;
+    color: #000;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+    box-shadow: 5px 5px 10px #6f7364;
+    align-self: center;
+}
+
+.book-now-button:hover {
+    background-color: #F1692F;
+}
+
+.table-column table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.table-column th,
+.table-column td {
+    padding: 10px;
+    border-bottom: 1px solid #e0e0e0;
+}
+
+.table-column th {
+    background-color: #f0f0f0;
+    text-align: left;
+    font-size: 18px;
+}
+
+.table-column tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+.table-column tr:hover {
+    background-color: #e0e0e0;
 }
