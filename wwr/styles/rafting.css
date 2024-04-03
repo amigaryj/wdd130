@@ -149,12 +149,12 @@ footer p {
     font-size: 1.2rem;
 }
 
-footer p a hover: {
+footer a:hover {
     text-decoration: underline;
 }
 
 footer a:hover {
-    color: #42535F;
+    color: #F1692F;
 }
 
 .wireframe-link {
