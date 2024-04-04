@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,700;1,700&family=Roboto&display=swap');
 
 :root {
-    --primary-color: #42535F;;
+    --primary-color: #42535F;
     --secondary-color: #F1692F;
     --accent1-color: #F4A937;
     --accent2-color: #5E6E96;
@@ -410,7 +410,14 @@ input[type="radio"] {
 
 legend {
     color: whitesmoke;
-    white-space: nowrap; 
+    white-space: nowrap;
+}
+
+legend.pick-one {
+    color: whitesmoke;
+    white-space: nowrap;
+    width: 150px;
+    padding-left: 20px;
 }
 
 fieldset legend {
@@ -453,7 +460,7 @@ button[type="submit"] {
     border-radius: 5px;
 }
 
-.button-box .book:hover {
+.button-box.book:hover {
     background-color: #F1692F; 
     color: #fff; 
 }
@@ -632,4 +639,225 @@ h4,.msg h2 {
 
 .table-column tr:hover {
     background-color: #e0e0e0;
+}
+
+/*----------------Index---------------*/
+
+.index-hero {
+    position: relative;
+}
+
+.index-hero img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.index-hero h1 {
+    position: absolute;
+    top: 10%;
+    left: 0;
+    right: 0;
+    color: whitesmoke;
+    z-index: 3;
+    background-color: rgba(66, 83, 95, 0.5);
+    padding: 10px 20px;
+    text-align: center;
+}
+
+.index-article {
+    position: absolute;
+    background-color: rgba(66, 83, 95, 0.5);
+    padding-top: 10px;
+    top: 45%;
+    left: 7%;
+    right: 5%;
+    width: 85%;
+    color: whitesmoke;
+    z-index: 2;
+    font-size: 23px;
+    text-align: justify;
+}
+
+.index-article p {
+    color: #fff;
+    margin-right: 220px;
+    margin-left: 20px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.index-article .book-now-button {
+    float: right;
+    width: 100px;
+    height: auto;
+    display: block;
+    margin-top: 40px;
+    margin-right: 50px;
+    margin-bottom: 15px;
+    padding: 10px 15px;
+    background-color: #F4A937;
+    color: #fff;
+    text-decoration: none;
+    text-align: center;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+    box-shadow: 5px 5px 10px #6f7364;
+    text-wrap: nowrap;
+    font-size: 20px;
+}
+
+.index-article .book-now-button:hover {
+    background-color: #F1692F;
+}
+
+.index-form form {
+    width: 550px;
+    margin: 1rem auto 5rem;
+    padding: 20px;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    border-radius: 0.5rem;
+    background-color: #42535F;
+    display: grid;
+    justify-items: center;
+    font-size: 18px;
+}
+
+.index-form fieldset {
+    display: grid;
+    grid-gap: 0.5rem;
+    margin: 5px;
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    padding: 10px;
+    width: 100%;
+}
+
+.index-form .form-item {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 10px;
+    width: 100%;
+}
+
+.index-form .form-item input[type="text"],
+.index-form .form-item input[type="email"] {
+    width: calc(400px);
+    height: 20px;
+}
+
+.index-form h2 {
+    font-size: 40px; 
+    text-align: center; 
+    margin-bottom: 20px; 
+}
+
+.index-form label[for="newsletter"] {
+    margin-bottom: 15px;
+    font-size: 20px; 
+    white-space: nowrap; 
+    margin-right: 10px;
+}
+
+.index-form legend {
+    color: whitesmoke;
+    white-space: nowrap;
+}
+
+.index-form label {
+    white-space: nowrap;
+    color: whitesmoke;
+    margin-right: 5px;
+}
+
+.index-form button[type="subscribe"] {
+    margin-top: 20px;
+    height: 30px;
+    width: 500px;
+    text-align: center;
+    padding: 5px;
+    font-size: 15px;
+    color: #42535F; 
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    border-radius: 0.5rem;
+    margin: auto;
+}
+.mountains-section {
+    position: relative;
+    overflow: hidden;
+    border-top: 2px solid #4A4E69;
+}
+
+.background {
+    position: absolute;
+    top: 50px;
+    left: 0;
+    width: 100%;
+    height: 300%;
+    background-color: #42535F;
+    z-index: -1;
+}
+
+.mountains-container {
+    position: relative;
+    max-width: 90%;
+    height: auto;
+    margin-top: 12vh;
+    margin-bottom: 7vh;
+    margin-left: 5vw;
+    padding-left: 5vw;
+}
+
+.mountains {
+    position: relative;
+    display: block;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.715);
+    width: 70%;
+    height: auto;
+    z-index: 1; 
+}
+
+.msg {
+    position: absolute;
+    top: 50%;
+    left: calc(100% + -30%);
+    transform: translate(-50%, -50%);
+    background-color: rgba(255, 255, 255, 0.8);
+    padding: 3vw;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.715);
+    z-index: 2;
+    width: 40%;
+    max-width: 300px;
+    height: auto;
+    text-align: center;
+}
+
+.msg h4 {
+    font-size: 1.7vw;
+    white-space: nowrap;
+    text-align: center;
+}
+
+.msg p {
+    margin-top: .5vh;
+    text-align: center;
+    font-size: 1.5vw;
+}
+
+.join {
+    display: inline-block;
+    margin-top: 1vh;
+    align-items: center;
+    padding: 1vh 5vw;
+    background-color: #42535F;
+    color: whitesmoke;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 1.5vw;
+    width: 20%;
+    white-space: nowrap;
+}
+
+.join:hover {
+    background-color: #5E6E96;
 }
